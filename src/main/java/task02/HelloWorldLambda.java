@@ -7,10 +7,10 @@ import java.util.Map;
 
 public class HelloWorldLambda {
 
-    public String myHandler()
+    public String myHandler(Map<String,Object> input, Context context)
     {
-        //LambdaLogger logger = context.getLogger();
-        //logger.log("received : " + input);
+        LambdaLogger logger = context.getLogger();
+        logger.log("received : " + input);
         return "Hello from Lambda";
     }
 }
