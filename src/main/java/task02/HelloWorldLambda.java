@@ -11,6 +11,6 @@ public class HelloWorldLambda {
     {
         //LambdaLogger logger = context.getLogger();
         //logger.log("received : " + input);
-        return "Hello World";
+        return "Hello from Lambda";
     }
 }
